@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RelativeViewController.h
 //  UILayout
 //
 //  Created by 李帅 on 14-10-14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RelativeViewController : UIViewController
 
 @end
-

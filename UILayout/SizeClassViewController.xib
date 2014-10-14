@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SizeClassViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRT-c0-DmM">
+                    <rect key="frame" x="8" y="8" width="584" height="584"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.67843137249999996" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前iPhone横屏布局" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xk5-ve-PGj">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                        <rect key="frame" x="301" y="53" width="198" height="26"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前为iPhone布局" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jad-b4-jAa">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="128" y="53" width="145" height="39"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前为iPad布局" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuS-hU-TcJ">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                        <rect key="frame" x="328" y="86" width="144" height="43"/>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="kuS-hU-TcJ" secondAttribute="centerX" id="0td-J2-19F"/>
+                <constraint firstItem="iRT-c0-DmM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="WpS-qJ-gUT"/>
+                <constraint firstItem="Xk5-ve-PGj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="53" id="cpJ-Ve-r6c"/>
+                <constraint firstAttribute="centerX" secondItem="Xk5-ve-PGj" secondAttribute="centerX" id="dqS-xh-UDq"/>
+                <constraint firstAttribute="centerX" secondItem="iRT-c0-DmM" secondAttribute="centerX" id="hTX-C6-1zb"/>
+                <constraint firstItem="jad-b4-jAa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="53" id="jwZ-1g-oM2"/>
+                <constraint firstItem="kuS-hU-TcJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="86" id="kRq-wW-w08"/>
+                <constraint firstAttribute="centerX" secondItem="jad-b4-jAa" secondAttribute="centerX" id="nPN-Lm-sRS"/>
+                <constraint firstAttribute="trailing" secondItem="iRT-c0-DmM" secondAttribute="trailing" constant="8" id="osm-IL-zVS"/>
+                <constraint firstAttribute="bottom" secondItem="iRT-c0-DmM" secondAttribute="bottom" constant="57" id="rDM-8d-5ad"/>
+                <constraint firstItem="iRT-c0-DmM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="ttH-A1-Dkz"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Xk5-ve-PGj"/>
+                    <exclude reference="jad-b4-jAa"/>
+                    <exclude reference="kuS-hU-TcJ"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="jwZ-1g-oM2"/>
+                    <exclude reference="nPN-Lm-sRS"/>
+                    <exclude reference="0td-J2-19F"/>
+                    <exclude reference="kRq-wW-w08"/>
+                    <exclude reference="cpJ-Ve-r6c"/>
+                    <exclude reference="dqS-xh-UDq"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="jad-b4-jAa"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="jwZ-1g-oM2"/>
+                    <include reference="nPN-Lm-sRS"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="Xk5-ve-PGj"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="cpJ-Ve-r6c"/>
+                    <include reference="dqS-xh-UDq"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="kuS-hU-TcJ"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="0td-J2-19F"/>
+                    <include reference="kRq-wW-w08"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

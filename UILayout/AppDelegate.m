@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "RelativeViewController.h"
+#import "SizeClassViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +16,23 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UITabBarController *tabBar = [[UITabBarController alloc] init];
+    
+    RelativeViewController *relativeController = [[RelativeViewController alloc] init];
+    relativeController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:0];
+    
+    SizeClassViewController *sizeClassController = [[SizeClassViewController alloc] initWithNibName:@"SizeClassViewController" bundle:nil];
+    sizeClassController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:1];
+    
+    tabBar.viewControllers = @[relativeController, sizeClassController];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = tabBar;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
